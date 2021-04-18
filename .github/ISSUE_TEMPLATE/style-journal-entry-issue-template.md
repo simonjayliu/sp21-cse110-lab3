@@ -2,7 +2,7 @@
 name: Style Journal Entry Issue Template
 about: To capture the issue of needing to style the journal entries
 title: ''
-labels: documentation, enhancement, extensible, display
+labels: display, documentation, enhancement, extensible
 assignees: simonjayliu
 
 ---
