@@ -6,6 +6,10 @@
 
 [Go to "Roadblocks"](#Currently-roadblocks-that-need-to-be-resolved)
 
+
+## Date:
+
+
 ## What was finished yesterday or since the last standup meeting 
 
 **Name:** 
