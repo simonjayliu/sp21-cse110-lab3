@@ -5,7 +5,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Simon Liu">
         <link rel="icon" href="/your-logo(1).png">
-        <title>CSE 110 Lab 2</title>
+        <link rel="stylesheet" href="mystyle.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        <title>CSE 110 Lab 3</title>
+        <style>
+            /* universal selector */
+            * {
+                background-color: rgb(160, 199, 224);
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -19,27 +28,29 @@
         </header>
 
         <main>
-            <h1>My eventful Past 3 Days</h1>
+            <h1 class="box">My eventful Past 3 Days</h1>
 
             <section>
-                <h2 id="Journal-Day-1">Journal Day 1: Thursday</h2>
-                <h3>April 8 2021</h3>
+                <h2 id="Journal-Day-1" class="box1">Journal Day 1: Thursday</h2>
+                <h3 class="box2">April 8 2021</h3>
 
-                <h4>Highlights</h4>
+
+                <h4 class="under">Highlights</h4>
                 <ul>
                     <li>Woke up early</li>
                     <li>Got vaccinated</li>
                     <li>Started to do work in the beginning of the day</li>
                     <li>Prepared for my interview</li>
                 </ul>
+                
 
-                <h4>Lowlights</h4>
+                <h4 class="under">Lowlights</h4>
                 <ul>
                     <li>Stayed indoors most of the day</li>
                     <li>Watched a lot of NBA later in the day when I shouldv'e been watching lecture</li>
                 </ul>
 
-                <h4>To Do List</h4>
+                <h4 class="under">To Do List</h4>
                 <ol>
                     <li>Watch CSE 101 Lecture</li>
                     <li>Watch CSE 110 Lecture</li>
@@ -49,39 +60,71 @@
                 </ol>
 
                 <div>
-                    <h4>Venting Paragraph</h4>
-                    <p>
+                    <h4 class="under">Venting Paragraph</h4>
+                    <p class="newfont">
                         I'm glad I woke up early today to slowly change my sleeping schedule. It's been a tough couple
                         of months just staying in my room all day with little social interaction with people. 
                     </p>
 
                     <hr>
 
-                    <p>
+                    <p class="colortext">
                         I do have an interview <b>tomorrow</b> and I'm extremely anxious as I am ill prepared for the interview. I hope
                         that I can get most of my work done today so that I have some time to practice for the interview.
                     </p>
                 </div>
 
-                <h4>Image of the Day: Bitcoin and it's continuing growth</h4>
+                <h4 class="under">Hobbies</h4>
+                <div class="container">
+                    <div>
+                        Basketball
+                        <br>
+                        <img src="https://shop.wilson.com/media/catalog/product/cache/38/image/9df78eab33525d08d6e5fb8d27136e95/c/7/c7dd204a5c8de77cfa036eb232a5e64659c7b2e1_WTB0516_Evolution_v2.jpg"
+                        alt="Basketball"
+                        width="250"
+                        />
+                    </div>
+                    <div>
+                        Fitness
+                        <br>
+                        <img src="https://images.unsplash.com/photo-1576678927484-cc907957088c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZHVtYmJlbGxzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                        alt="Fitness"
+                        width="250"
+                        />
+                    </div>
+                    <div>
+                        Mountain Biking
+                        <br>
+                        <img src="https://images.unsplash.com/photo-1605050852571-7bb180ca8d98?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fG1vdW50YWluJTIwYmlraW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                        alt="Fitness"
+                        width="4000"
+                        />
+                    </div>
+                </div>
+
+                <h4 class="under">Image of the Day: Bitcoin and it's continuing growth</h4>
                 <img src="https://images.moneycontrol.com/static-mcnews/2021/01/Bitcoin-1-770x433.jpg?impolicy=website&width=770&height=431"
                 alt="Bitcoin"
                 width="250"
                 />
-                
+
                 <br>
                 <br>  
-                <h4>Audio of the Day</h4>
+
+                <h4 class="under">Audio of the Day</h4>
                 <p>Song Name: B.o.B - <span>Both of Us</span> ft. Taylor Swift</p>
                 <audio controls>
                     <source src="/B.o.B-BothofUsft.TaylorSwiftOfficialVideo(320kbps).mp3" type="audio/mp3">
                 </audio>
 
                 <br>
-                <h4>Video of the Day</h4>
+
+                <h4 class="under">Video of the Day</h4>
                 <details>
                     <summary>Story details</summary>
-                    Me and my friends went mountain biking, and we were doing a trail that we have done before. Since we were familiar with it, we went pretty loose at a good speed. We hear my friend scream, and we I turn the corner I see that there is a rattlesnack on the trail. My one friend had already ran over it, but me and another friend still needed to pass the snake. We threw rocks and branches at the snake, and this was the rock that finally hit the snake. After the video, the snake got off the trail and we were able to ride past it.
+                    <p style="color:antiquewhite;text-align: center;">
+                        Me and my friends went mountain biking, and we were doing a trail that we have done before. Since we were familiar with it, we went pretty loose at a good speed. We hear my friend scream, and we I turn the corner I see that there is a rattlesnack on the trail. My one friend had already ran over it, but me and another friend still needed to pass the snake. We threw rocks and branches at the snake, and this was the rock that finally hit the snake. After the video, the snake got off the trail and we were able to ride past it.
+                    </p>
                 </details>
 
                 <br>
@@ -94,10 +137,10 @@
             <br>
 
             <section>
-                <h2 id="Journal-Day-2">Journal Day 2: Friday</h2>
-                <h3>April 9 2021</h3>
+                <h2 id="Journal-Day-2" class="box1">Journal Day 2: Friday</h2>
+                <h3 class="box2">April 9 2021</h3>
 
-                <h4>Highlights</h4>
+                <h4 class="under">Highlights</h4>
                 <ul>
                     <li>Woke up early</li>
                     <li>Felt good about my Math 18 quiz</li>
@@ -105,13 +148,13 @@
                     <li>Prepared for my interview</li>
                 </ul>
 
-                <h4>Lowlights</h4>
+                <h4 class="under">Lowlights</h4>
                 <ul>
                     <li>Missed my interview due to time zone difference</li>
                     <li>Had to take a Math 18 quiz</li>
                 </ul>
 
-                <h4>To Do List</h4>
+                <h4 class="under">To Do List</h4>
                 <ol>
                     <li>Work on CSE 110 Lab</li>
                     <li>Watch COGS 108 lecture</li>
@@ -120,8 +163,8 @@
                     <li>Start Math 18 homework</li>
                 </ol>
 
-                <div>
-                    <h4>Venting Paragraph</h4>
+                <div class="wrapper">
+                    <h4 class="under">Venting Paragraph</h4>
                     <p>
                         I'm glad I woke up early again today, my sleep schedule has been getting much better. I've been waking up pretty late and not being able to fall asleep at night, which I found was a major issue. Thus, to try and resolve it, I would start waking up early no matter how late I slept so that the next night I would be tired enough to fall asleep quickly.
                     </p>
@@ -133,7 +176,35 @@
                     </p>
                 </div>
 
-                <h4>Image of the Day: Interview Meme</h4>
+                <h4 class="under">Favorite Superheroes</h4>
+                <div class="container1">
+                    <div class="item1">
+                        Thor
+                        <br>
+                        <img src="https://i.pinimg.com/originals/2c/3f/d7/2c3fd77862947349f29dc9a08d66ce7f.jpg"
+                        alt="Thor"
+                        width="250"
+                        />
+                    </div>
+                    <div class="item2">
+                        Captain America
+                        <br>
+                        <img src="http://cdn.mos.cms.futurecdn.net/5z9Tg5GxgKLVXe2Qs2YXb3.jpg"
+                        alt="Captain-America"
+                        width="250"
+                        />
+                    </div>
+                    <div id="item3">
+                        Iron Man
+                        <br>
+                        <img src="https://fastly.syfy.com/sites/syfy/files/syfywire_blog_post/2018/10/avengers-tony-stark-iron-man-movie-hd-wallpaper-2880x1800-1920x1080.jpg"
+                        alt="Iron-Man"
+                        width="4000"
+                        />
+                    </div>
+                </div>
+
+                <h4 class="under">Image of the Day: Interview Meme</h4>
                 <img src="https://sayingimages.com/wp-content/uploads/tell-me-aboit-yourself-job-interview-meme.jpg"
                 alt="Interview meme"
                 width="250"
@@ -141,14 +212,24 @@
                 
                 <br>
                 <br>  
-                <h4>Audio of the Day</h4>
+                <h4 class="under">Audio of the Day</h4>
                 <p>Song Name: Eminem - <span>Love The Way You Lie</span> ft. Rihanna</p>
                 <audio controls>
                     <source src="/Eminem-LoveTheWayYouLieft.Rihanna(320kbps).mp3" type="audio/mp3">
                 </audio>
 
+                <h5>Sample Lyrics</h5>
+                <div>Now I know we said things, did things</div>
+                <p>that we didn't mean and we fall back into the same patterns</p>
+                <code>same routine, but your temper's just as bad, as mine is</code>
+                <div>You're the same as me, when it comes to love, you're just as blinded</div>
+                <p>Baby please come back, it wasn't you</p>
+                <span>Baby it was me, maybe our relationship isn't as crazy as it seems</span>
+                <span><br>Maybe that's what happens When a tornado meets a volcano</span>
+                <p>All I know is I love you too much, to walk away now</p>
+
                 <br>
-                <h4>Video of the Day: Magic Trick Performance</h4>
+                <h4 class="under">Video of the Day: Magic Trick Performance</h4>
                 <video width="400" height="500" controls>
                     <source src="/cm-chat-media-video-5hfVfMsZbNLgCmxHApOXq.MOV" type="video/mp4">
                 </video>
@@ -157,24 +238,24 @@
             <br>
 
             <section>
-                <h2 id="Journal-Day-3">Journal Day 3: Saturday</h2>
-                <h3>April 10 2021</h3>
+                <h2 id="Journal-Day-3" class="box1">Journal Day 3: Saturday</h2>
+                <h3 class="box2">April 10 2021</h3>
 
-                <h4>Highlights</h4>
+                <h4 class="under">Highlights</h4>
                 <ul>
                     <li>Finished CSE 101 quiz</li>
                     <li>Had CSE 110 group icebreakers</li>
                     <li>Planned for my trip to Illinois</li>
                 </ul>
 
-                <h4>Lowlights</h4>
+                <h4 class="under">Lowlights</h4>
                 <ul>
                     <li>Did not leave the hosue</li>
                     <li>Woke up pretty late</li>
                     <li>Wasn't efficiently working at night</li>
                 </ul>
 
-                <h4>To Do List</h4>
+                <h4 class="under">To Do List</h4>
                 <ol>
                     <li>Work on CSE 110 Lab</li>
                     <li>Take CSE 110 Quiz</li>
@@ -183,13 +264,49 @@
                 </ol>
 
                 <div>
-                    <h4>Venting Paragraph</h4>
+                    <h4 class="under">Venting Paragraph</h4>
                     <p>
                         I woke up pretty late today, so not too happy about that. I want to stay efficient everyday but I slept late last night so I was tired. I got some of my work done today, and once I finished my CSE 101 quiz, my parents asked me to help them plan our trip to Illinois for my brother's graduation. I thought to myself <i>Oh this is going to be exciting!</i> I had to order plane tickets, rent a vehicle, and book a hotel room, which I happily did because I like to do that kind of stuff. However, the thing that wasn't too great was the prices of everything. I thought it would be cheap because of COVID, but that was <em>not</em> the case. I spent a lot of money ordering those things for the trip, but did it in a fashionable way by renting the <b>Cadillac Escalade</b> for a couple days. However, the lesson I learned is that <strong>you gotta be a baller to be spending the big dollars</strong>.
                     </p>
                 </div>
 
-                <h4>Image of the Day: Spikeball New Rule</h4>
+                <h4>My favorite NBA teams and best players on each team</h4>
+                <ul>
+                    <li>
+                      <div>LA Clippers</div>
+                      <ul>
+                        <li>Kawhi Leonard</li>
+                        <li>Paul George</li>
+                        <li>Rajon Rondo</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <div>New York Knicks</div>
+                      <ul>
+                        <li>Julius Randle</li>
+                        <li>RJ Barrett</li>
+                        <li>Derrick Rose</li>
+                      </ul>
+                    </li>
+                    <li>
+                        <div>Portland Trailblazers</div>
+                        <ul>
+                          <li>Damian Lillard</li>
+                          <li>CJ Mccollum</li>
+                          <li>Jusuf Nurkic</li>
+                        </ul>
+                      </li>
+                  </ul>
+
+                  <h4>Two Truths one Lie</h4>
+                  <div>
+                    <span>I have a dog.
+                      <span><br>I don't play video games.</span>
+                    </span>
+                  </div>
+                  <span>I went to China to study for two years.</span>
+
+                <h4 class="under">Image of the Day: Spikeball New Rule</h4>
                 <img src="/IMG_4030.PNG"
                 alt="Spikeball New Rule"
                 width="250"
@@ -197,14 +314,14 @@
                 
                 <br>
                 <br>  
-                <h4>Audio of the Day</h4>
+                <h4 class="under">Audio of the Day</h4>
                 <p>Song Name: B.o.B - <span>Airplanes Part 2</span> Ft. Eminem, Hayley Williams</p>
                 <audio controls>
                     <source src="/B.o.B-AirplanesPart.2(Ft.Eminem,HayleyWilliams)CDQW-Lyrics(320kbps).mp3" type="audio/mp3">
                 </audio>
 
                 <br>
-                <h4>Video of the Day: DyeisLife</h4>
+                <h4 class="under">Video of the Day: DyeisLife</h4>
                 <video width="400" height="500" controls>
                     <source src="/recorded-1262867700327.MP4" type="video/mp4">
                 </video>
