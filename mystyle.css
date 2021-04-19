@@ -1,0 +1,177 @@
+/* color for journal entry headers using rgb */
+h2 {
+    color: rgb(233, 235, 240);
+}
+
+/* color for dates under journal entires using hex codes */
+h3 {
+    color: #c4e649;
+}
+
+/* color for section headers using hsl */
+h4 {
+    color: rgba(241, 1, 1, 0.6);
+}
+
+/* added background color for bold and strong text */
+b, strong {
+    background-color: black;
+    color: white;
+}
+
+/* box for title of document */
+.box {
+    border-style: dashed double none;
+    border-color: rgb(26, 15, 37);
+    border-width: 1ex; /* ex relative unit used */
+
+    margin-top: 30px; /* px absolute unit used */
+    margin-right: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+
+    padding-top: 20px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+
+    text-align: center;  
+}
+
+/* box for Individual Journal Entries */
+.box1 {
+    background-color: rgb(81, 140, 218);
+    margin: auto;
+    padding: 20px 50px 20px 50px;
+    border-radius: 10px;
+    border-width: .35rem; /* rem relative unit used */
+    border-color: black;
+    border-style: dashed;
+    text-align: center;
+    display: block;
+}
+
+/* box for date under journal entries */
+.box2 {
+    background-color: salmon;
+    margin: 20px 91em 20px 20px; /* em relative unit used */
+    padding: 1mm 4mm 1mm 4mm; /* mm absolute unit used */
+    display: inline-block;
+}
+
+/* used underline for text */
+.under {
+    text-decoration: underline dotted red;
+}
+
+/* created video settings of height and width */
+video {
+    height: 500px;
+    width: 400px;
+    position: static;
+}
+
+/* created max and min width for images */
+img {
+    max-width: 3in; /* in absolute unit used */
+    min-width: 2in;
+    position: relative;
+    top: 10px;
+    left: 40px;
+}
+
+/* pseudoclass hover used in relative links at top of document */
+a:hover{
+    background-color: gold;
+}
+
+/* pseudoclass active used in relative links at top of document */
+a:active {
+    color: green;
+}
+
+/* flex layout used for hobbies section */
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+/* grid layout used for my favorite superheroes */
+.container1 {
+    display: grid;
+    grid-template-columns: 700px 50px 700px 50px 700px;
+    grid-template-rows: auto;
+    justify-items: center;
+    justify-content: center;
+    grid-template-areas: 
+        "item1 . item2 . item3"
+        "item1 . item2 . item3"
+        "item1 . item2 . item3";
+}
+
+/* to organize item1 on the grid to the left */
+.item1 {
+    grid-area: item1;
+}
+
+/* to organize item2 on the grid to the center */
+.item2 {
+    grid-area: item2;
+}
+
+/* to organize item3 on the grid to the right */
+#item3 { /* id selector */
+    grid-area: item3;
+}
+
+/* media query change if screen width is less than 500 pixels */
+@media only screen and (max-width: 500px) {
+    body {
+        background-color: green;
+    }
+}
+
+/* import and use new cursive font */
+.newfont {
+    font-family: 'Dancing Script', cursive;
+}
+
+/* descendant Combinator Selector */
+li {
+    list-style-type: disc;
+}
+
+li li {
+    list-style-type: circle;
+}
+
+/* attribute selector */
+a[href*="3"] {
+    color:red;
+}
+
+/* Child Combinator Selector */
+span {
+    background-color: white;
+}
+
+div > span {
+    background-color: rgb(241, 76, 10);
+}
+
+/* General Sibling Combinator Selector */
+p ~ span {
+    color: red;
+}
+
+/* Adjacent Sibling combinator Selector */
+div + p {
+    color: yellow;
+}
+
+/* Combining Two Selectors */
+p.colortext {
+    background-color: yellowgreen;
+}
